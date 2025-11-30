@@ -1,4 +1,22 @@
-package PACKAGE_NAME;
+import java.util.*;
+
 
 public class TesteWhile2 {
+    public static void main(String[] args) {
+
+        Scanner dado = new Scanner(System.in);
+
+        System.out.println("Digite o número da tabuada que você quer ver: ");
+
+        int tabuada = dado.nextInt();
+
+        int n = 1;
+
+        while(n<=10){
+            int resultado = tabuada * n;
+            System.out.println(tabuada + "X" + n + "=" + resultado);
+            n++;
+        }
+
+    }
 }
